@@ -1,0 +1,121 @@
+/*For desktop*/
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+.main-div{
+    width: 100%;
+}
+.main-logo{
+    text-align: left;
+
+}
+.main-header h1{
+    text-align: right;
+
+}
+.main-contain{
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.main-contain a{
+    padding: 6px 10px;
+    margin: 20px 0px;
+    background-color: transparent;
+    
+}
+.main-contain a:hover{
+    border-radius: 2px;
+}
+/* nav bar end here */
+/* profile start here  */
+.topweathericon{
+    position: absolute;
+    right: 60px;
+    width: 120px;
+    top: 30px;
+    transition: width 2s , transform 2s;
+
+}
+.topweathericon:hover{
+   
+ width: 140px;
+    
+}
+.bottomweathericon{
+    position: absolute;
+    left: 40px;
+    width: 120px;
+    top: 160px;
+    bottom: 0px;
+    transition: width 2s , transform 2s;
+
+}
+.bottomweathericon:hover{
+   
+ width: 140px;
+    
+}
+.profile::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* profile end here  */
+.about-me{
+    
+
+    
+}
+.about-image{
+    top: 100%;
+
+}
+.about-image img{
+  height: 270px;
+  width: 250px;  
+}
+.aboutme-desc{
+    text-align: left;
+}
+/* profationall expariance start here */
+
+
+/* profationall expariance end here */
+.contant-icon{
+    position: relative;
+}
+.media{
+    position: absolute;
+    margin-top: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+/* footer start here*/
+.footer{
+    background: black;
+    padding: 0px;
+    margin: 0px;
+    height: 80px;
+    text-align: center;
+padding-top: 30px;
+}
+.footer-manu a{
+    text-decoration: none;
+    color: white;
+    display: inline;
+    margin: 10px;
+    
+}
+/* footer end here */
+

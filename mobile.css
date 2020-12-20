@@ -1,0 +1,351 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+.main-div{
+    background: aqua;
+    text-align: center; 
+    padding: 1% 7%;
+
+}
+.main-div h1{
+    color: white;
+    margin: 0px;
+    padding-top: 5px;
+}
+[class*="col-"]{
+    float: left;
+    padding-left: 30px;
+    padding-right: 50px;
+    margin: none;
+}
+/*for mobile*/
+[class*="col-"]{
+    width: 100%;
+}
+
+.main-logo img{
+width: 85px;
+height: 85px;
+border-radius: 30px;
+}
+.main-header{
+ font-size: 1.2rem;
+}
+.main-contain{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.main-contain a{
+    background-color: teal;
+    border-radius: 10px;
+    margin: 7px 0px;
+    padding: 10px;
+}
+.main-contain a:hover{
+    background: gray;
+}
+.main-contain a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.main-div{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* nav bar end here */
+/* profile desing start here  */
+.profile{
+    padding: 30px;
+    text-align: center;
+    position: relative;
+   height: 300px;
+}
+.topweathericon{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transition: transform 2s;
+
+}
+.topweathericon:hover{
+       
+ transform: rotate(360deg);
+    
+}
+.profile-contain h1{
+ font-family: "satisfy",cursive;
+ font: 3rem;
+
+}
+.profile-contain p{
+    color: gray;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    width: 90%;  
+}
+.bottomweathericon{
+    position: absolute;
+    
+    left: 60px;
+    bottom: 0px;
+    transition: transform 2s;
+
+}
+.bottomweathericon:hover{
+   
+ transform: rotate(360deg);
+    
+}
+
+/* profile desing end here  */
+/* about me start here */
+.about-me{
+    background: rgb(14, 197, 142);
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    margin-bottom: 49px;
+    
+    
+}
+.about-me h2{
+    color: white;
+    padding-bottom: 15px;
+}
+.dotted-hr{
+    
+    width: 90px;
+    border: dotted 6px white;
+    margin: 20px auto;
+    border-bottom: none;
+    
+    
+}
+.about-image img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 120px;
+    margin-bottom: 50px;
+}
+.aboutme-desc p{
+    
+    font-family: 'Roboto Mono', monospace;
+   padding-top: 20px;
+    padding-bottom: 20px;
+}
+.aboutme-desc a{
+    text-decoration:none;
+    font-size: 1.2rem;
+    color: white;
+}
+.about-me::after{
+    clear: both;
+    content: '';
+    display: table;
+
+}
+
+
+/* about me start here */
+/* profationall expariance start here */
+
+.profationall-exparience{
+    padding: 1% 7%;
+}
+.card{
+    background: #a39e9e;
+    border-radius: 5px;
+    padding: 10px;
+    transition: .3s;
+    height: 700px;
+    margin-bottom: 30px;
+}
+.card:hover{
+    box-shadow: 0 4px 8px 5px black;
+}
+.card-icon{
+    text-align: center;
+
+}
+.card-icon img{
+    margin-top: 20px;
+    width: 100px;
+}
+.roudedIma{
+    border: 4px solid white;
+    border-radius: 50%;
+    padding: 4px;
+}
+.card-title h2{
+background: gray;
+color: white;
+text-align: center;
+padding: 10px;
+}
+.card-desc{
+    text-align: justify;
+    padding-left: 15px; 
+}
+
+
+
+
+
+
+
+.profationall-exparience::after{
+    display: table;
+    clear: both;
+    content: '';
+}
+.skills-containar{
+    padding-left: 15px;
+}
+.skills-containar li{
+    list-style: none;
+    font-weight: bolder;
+    margin: 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.skills-containar li::before{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 100%;
+    height: 10px;
+    background: rgb(86, 86, 153,.5);
+}
+.skills-containar li::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px);
+    width: 0;
+    height: 10px;
+    background: rgb(86, 86, 153,1);
+
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.skills-containar li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 90%;
+    }
+}
+
+
+
+
+/* profationall expariance end here */
+
+
+
+.profational{
+  background-color: rgb(37, 123, 194);
+
+}
+.achivements{
+    text-align: center;
+
+}
+.achivements h2{
+    padding-top: 30px;
+}
+.achivements p{
+    font-weight: bolder;
+    text-align: justify;
+}
+.contant{
+    text-align: center;
+    padding-top: 30px;
+}
+.contant input,textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.contant button{
+    border: none;
+    border-radius: 12px;
+    background-color: #052d2f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    margin: 10px;
+    width: 100px;
+}
+.contant-icon{
+    text-align: center;
+    margin-top: 30px;
+}
+.btn{
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 10px;
+    width: 50px;
+
+}
+.btn:hover{
+    background-color: gray;
+}
+
+
+.profational::after{
+    content: '';
+    display: table;
+    clear:both;
+}
+
+/* footer star here */
+.footer{
+    background: black;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 30px;
+    text-align: center;
+}
+.footer-manu a{
+text-decoration: none;
+color: white;
+display: block;
+margin: 10px;
+
+}
+.footer-manu a:hover{
+    background-color: gray;
+}
+.desc{
+    color: white;
+}
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* footer end here */
